@@ -34,23 +34,23 @@ There are 16 values on each line, which are as follows:
 ## Design of the app
 In my opinion the app will appeal to older generations rather than younger ones. I just believe young people are more carefree and less concerned about this type of thing then older generations, therefore, I believe the app should be extremely user friendly and really easy to use. Not to assume that older people are any worse with technology but I think younger people can probably navigate more complicated apps easier.
 
-    ## Menu
-    I think the menu that the user will see the second they open the app will look like this. We will be brought straight into the list of stations, and then if the user wished to search for a specific station, they can click the star (settings) button at the top right of the screen.
+## Menu
+I think the menu that the user will see the second they open the app will look like this. We will be brought straight into the list of stations, and then if the user wished to search for a specific station, they can click the star (settings) button at the top right of the screen.
     
-    Here is an example of how the app will look straight off
+Here is an example of how the app will look straight off:
+
+https://static.dyp.im/S3DM9qXDLO/15006fc682be267fead6299660184596.png
     
-    +++++LINK HERE++++++++
-    
-    ## Search(Star)
-    The search button (the star) will be very simple too. Once clicked a search bar will appear on a side menu. There, a user can search by either town, name, address or eircode.
+## Search(Star)
+The search button (the star) will be very simple too. Once clicked a search bar will appear on a side menu. There, a user can search by either town, name, address or eircode.
     
     
-    Here is an example of how thesearch bar will look
+Here is an example of how the search bar will look:
     
-    +++++LINK HERE++++++++
-    
-    ##Map
-    Although I'm not big on maps in apps this one probably could hae one. We're given longtitue and latitude coordinates so it wouldn't be difficult to incorporate one.
+https://static.dyp.im/Qz1EBpHdha/2b021a1b71d8a03368eecbbc64ba8048.png
+
+## Map
+Although I'm not big on maps in apps this one probably could hae one. We're given longtitue and latitude coordinates so it wouldn't be difficult to incorporate one.
     
 ## URl's
 One of the URL's could be a list of stations that are a certain size. For example, if we were to have a url like the following:
@@ -65,7 +65,7 @@ will return a list of large stations in Roscommon.
 
 The size of the stations could be decided by how many fire trucks they have and how many active members they have.
 
-List of small fire stations (stations with 1 trucj and less  than 10 members):
+List of small fire stations (stations with 1 truck and less than 10 members):
 
 *http://roscfirestations.com/size/[small]*
 where you replace [small] with the size of the station.
@@ -78,8 +78,28 @@ List of fire stations in a specific area:
 *http://roscfirestations.com/area/[area]*
 where you replace [area*] with an address or town.
 For example, the URL:
-*http://roscfirestations.com/area/
-will return a list of stations 
+*http://roscfirestations.com/area/Boyle
+will return a list of stations in the town of Boyle
+
+We could now easily mix these two together. If we wanted to find only small stations in a certain are we can combine the two, like so:
+List of small fire stations in a specific area:
+
+*http://roscfirestations.com/area-size/[area-size]*
+where you replace [area-size*] with an address or town and which size you want.
+For example, the URL:
+*http://roscfirestations.com/area-size/Boyle-small
+will return a list of small stations in the town of Boyle
+
+List of large fire stations in a specific area:
+
+*http://roscfirestations.com/area-size/[area-size]*
+where you replace [area-size*] with an address or town and which size you want.
+For example, the URL:
+*http://roscfirestations.com/area-size/Boyle-large
+will return a list of large stations in the town of Boyle
+
+
+
 
 
 
